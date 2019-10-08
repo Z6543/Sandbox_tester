@@ -2,12 +2,12 @@
 
 
 ## Introduction
-This package consists of a malware analysis sandbox tester tool, a DNS server and a HTTP server,
+This package consists of a malware analysis sandbox tester tool, a DNS server, and an HTTP server,
 all written in Python. If the tool is executed on a sandbox, it will leak environment data to the 
 configured servers. This information can be used to build better anti-sandbox solutions.
 
 ## Requirements
-### Requirements on the HTTP/DNS server side
+### Requirements on the HTTP/DNS server-side
 Python 2.7
 
 ### Requirements on the builder side
@@ -27,7 +27,7 @@ WinXP - Win10
 
 2. Setup DNS
 	Let's say you own a domain called `<YOUR_DOMAIN`>, and you want to host your DNS and HTTP server on it,
-	and you have the IP of `<YOUR_IP>`. The following config creates a new nameserver (ns.`<YOUR_DOMAIN>`) 
+	and you have the IP of `<YOUR_IP>`. The following config creates a new nameserver (ns.`<YOUR_DOMAIN>`), 
 	which will resolve all subdomain requests to tt.`<YOUR_DOMAIN>`. This is needed to set up the DNS server.
 
 	```
@@ -125,4 +125,4 @@ use filename_decrypt_send.py on a txt file where the created filenames are liste
 
 ## Known issues
   * Some commands are buggy on XP - but it is safe to assume that if it is XP it is a sandbox ;) 
-  * Some results are not forwarded on non-english systems, like russian or chinese
+  * Some results are not forwarded on non-English systems, like Russian or Chinese
